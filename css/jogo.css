@@ -1,35 +1,320 @@
 .game-board{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
 }
 
-.fundo-dia{
+.fundo{
     position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    animation: fundo-transicao 240s infinite;
+}
+
+/*.fundo::before,
+.fundo::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition:  opacity 1.5s ease-in-out;
+}
+
+.fundo::before{
+    background-image: url('../img/fundo-dia.jpg');
+    opacity: 1;
+}
+
+.fundo::after{
+    background-image: url('../img/fundo-noite.jpg');
+    opacity: 0;
+}
+
+.fundo.transition::before{
+    opacity: 0;
+}
+
+.fundo.transition::after{
+    opacity: 1;
+}
+
+.chao{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.chao::before,
+.chao::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition:  opacity 1.5s ease-in-out;
+}
+.chao::before{
+    background-image: url("../img/chão-dia.png");
+    opacity: 1;
+}
+
+.chao::after{
+    background-image: url("../img/chão-noite.png");
+    opacity: 0;
+}
+
+.chao.transition::before{
+    opacity: 0;
+}
+
+.chao.transition::after{
+    opacity: 1;
+}
+
+
+/*------------------------------------------------------------------------------*/
+
+
+
+.sol{
+    position: absolute;
+    width: 200px;
+    bottom: 730px;
+    left: 1200px;
+    animation:  sol-animacao 120s linear forwards;
+    background-repeat: no-repeat;
+
+}
+
+.nuvem1{
+    position: absolute;
+    width: 200px;
+    bottom: 600px;
+    animation:  nuvem1-animacao 90s linear forwards;
+    background-repeat: no-repeat;
+}
+
+.igreja1{
+    position: absolute;
+    width: 400px;
+    bottom: 160px;
+    animation: igreja1-animacao 60s linear forwards;
+    background-repeat: no-repeat;
+}
+
+.igreja3-dia{
+    position: absolute;
+    width: 350px;
+    bottom: 160px;
+    animation:  igreja3-dia-animacao 115s linear forwards;
+    background-repeat: no-repeat;
+}
+
+.casa1-dia{
+    position: absolute;
+    width: 220px;
+    bottom: 160px;
+    animation: casa1-animacao 90s linear forwards;
+    background-repeat: no-repeat;
+}
+
+.casa2-dia{
+    position: absolute;
+    width: 220px;
+    bottom: 160px;
+    animation: casa2-animacao 100s linear forwards;
+    background-repeat: no-repeat;
+
+}
+
+.cacto1{
+    position: absolute;
+    width: 120px;
+    bottom: 110px;
+    animation:  cacto1-animacao 40s  linear 3 forwards;
+    background-repeat: no-repeat;
+}
+
+.cacto2{
+    position: absolute;
+    width: 100px;
+    bottom: 100px;
+    animation:  cacto2-animacao 65s linear forwards;
+    background-repeat: no-repeat;
+}
+
+.passaro{
+    position: absolute;
+    width: 100px;
+    bottom: 500px;
+    animation: passaro-animacao 30s linear forwards;
+    background-repeat: no-repeat;
+
 }
 
 .milho{
     position: absolute;
-    bottom: 0;
-    width: 80px;
-    animation: milho-animacao 1.5s infinite linear;
+    bottom: 10px;
+    width: 90px;
+    right: 2000px;
+    animation: milho-animacao 2.5s linear 5s 39 forwards;
+    background-repeat: no-repeat;
+}
+
+.pedra{
+    position: absolute;
+    bottom: 10px;
+    width: 90px;
+    right: 2000px;
+    animation: pedra-animacao 3s linear 18s 20 forwards;
+    background-repeat: no-repeat;
+
+}
+
+.arbusto{
+    position: absolute;
+    width: 35px;
+    bottom: 20px;
+    animation: arbusto-animacao 5s linear infinite;
+    
 }
 
 .personagem{
-    width: 100px;
+    width: 130px;
+    left: 50px;
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
 }
 
 .pulo{
-    animation: personagem-pulo 500ms ease-out;
+    animation: personagem-pulo 500ms ease-out; 
+}
+
+/*------------------------------------------115-----------------------------*/
+
+.fogueira{
+    position: absolute;
+    bottom: 10px;
+    width: 90px;
+    right: 2000px;
+    animation: fogueira-animacao 2.5s linear 115s 38 forwards;
+}
+
+.igreja2-noite{
+    position: absolute;
+    width: 200px;
+    bottom: 160px;
+    right: 2000px;
+    animation: igreja2-animacao 60s linear 112s forwards;
+    background-repeat: no-repeat;
+}
+
+.lua{
+    position: absolute;
+    width: 170px;
+    left: 1200px;
+    bottom: -2000px;
+    animation: lua-animacao 120s linear 109s forwards;
+}
+
+.casa1-noite{
+    position: absolute;
+    width: 220px;
+    bottom: 160px;
+    right: 2000px;
+    animation: casa1-noite-animacao 70s linear 163s forwards;
+    background-repeat: no-repeat;
+}
+
+.casa2-noite{
+    position: absolute;
+    width: 220px;
+    bottom: 160px;
+    right: 2000px;
+    animation: casa2-noite-animacao 70s linear 125s forwards;
+    background-repeat: no-repeat;
+}
+
+.igreja3-noite{
+    position: absolute;
+    width: 350px;
+    bottom: 160px;
+    right: 2000px;
+    animation:  igreja3-noite-animacao 70s linear 145s forwards;
+    background-repeat: no-repeat;
+}
+
+.balao1{
+    position: absolute;
+    width: 70px;
+    bottom: 200px;
+    right: 2000px;
+    animation: balao1-animacao 50s linear 130s forwards;
+    background-repeat: no-repeat;
+}
+
+.cacto1-noite{
+    position: absolute;
+    width: 120px;
+    bottom: 110px;
+    right: 2000px;
+    animation:  cacto1-animacao 40s  linear 120s 2 forwards;
+    background-repeat: no-repeat;
+}
+
+.cacto2-noite{
+    position: absolute;
+    width: 100px;
+    bottom: 100px;
+    right: 2000px;
+    animation:  cacto2-noite-animacao 44s linear 135s 2 forwards;
+    background-repeat: no-repeat;
+}
+
+@keyframes fundo-transicao{
+    0%{
+        background-image: url('../img/fundo-dia.jpg');
+    }
+    
+    50%{
+        background-image: url('../img/fundo-dia.jpg');
+        
+    }
+    51%{
+        background-image: url('../img/fundo-noite.jpg');
+        
+    }
+    100%{
+        background-image: url('../img/fundo-noite.jpg');
+    }
 }
 
 @keyframes milho-animacao{
     from {
-        right: -80px;
+        right: -300px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes fogueira-animacao{
+    from {
+        right: -300px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes pedra-animacao{
+    from {
+        right: -900px;
     }
 
     to {
@@ -43,20 +328,211 @@
         bottom: 0;
     }
 
+    30%{
+        bottom: 250px;
+    }
+
     40%{
-        bottom: 170px;
+        bottom: 250px;
+    }
+
+    45%{
+        bottom: 250px;
     }
 
     50% {
-        bottom: 170px;
+        bottom: 250px;
+    }
+
+    53%{
+        bottom: 250px;
+    }
+
+    55%{
+        bottom: 250px;
     }
 
     60%{
-        bottom: 170px;
+        bottom: 250px;
+    }
+
+    65%{
+        bottom: 250px;
+    }
+
+    70% {
+        bottom: 250px;
     }
 
     100%{
         bottom: 0;
     }
 
+}
+
+@keyframes cacto1-animacao{
+    from {
+        right: -200px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes cacto2-animacao{
+    from {
+        right: -550px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes cacto2-noite-animacao{
+    from {
+        right: -150px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes igreja1-animacao{
+    from{
+        right: -400px;
+    }
+
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes igreja2-animacao{
+    from{
+        right: -250px;
+    }
+
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes arbusto-animacao{
+    from{
+        right: -500px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes sol-animacao{
+    from{
+        top: -200px;
+    }
+
+    to {
+        top: 94%;
+    }
+}
+
+@keyframes lua-animacao{
+    from{
+        bottom: -10px;
+    }
+
+    to {
+        bottom: 100%;
+    }
+}
+
+@keyframes nuvem1-animacao{
+    from{
+        right: -150px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes casa1-animacao{
+    from{
+        right: -750px
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes casa1-noite-animacao{
+    from{
+        right: -220px
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes casa2-animacao{
+    from{
+        right: -1500px
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes casa2-noite-animacao{
+    from{
+        right: -500px
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes igreja3-dia-animacao{
+    from{
+        right: -2000px;
+    }
+
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes igreja3-noite-animacao{
+    from{
+        right: -400px;
+    }
+
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes passaro-animacao{
+    from{
+        right: -5000px;
+    }
+
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes balao1-animacao{
+    from{
+        right: -100px;
+        bottom: 200px;
+    }
+    to{
+        right: 100%;
+        bottom: 100%;
+    }
 }
