@@ -6,80 +6,27 @@
     overflow: hidden;
 }
 
-.fundo{
+.fundo.funanimado{
     position: absolute;
     width: 100%;
     height: 100%;
     overflow: hidden;
-    animation: fundo-transicao 240s infinite;
+    animation: fundo-transicao 217s infinite;
 }
 
-/*.fundo::before,
-.fundo::after{
-    content: '';
+.chao.chanimado{
     position: absolute;
-    width: 100%;
-    height: 100%;
-    transition:  opacity 1.5s ease-in-out;
-}
-
-.fundo::before{
-    background-image: url('../img/fundo-dia.jpg');
-    opacity: 1;
-}
-
-.fundo::after{
-    background-image: url('../img/fundo-noite.jpg');
-    opacity: 0;
-}
-
-.fundo.transition::before{
-    opacity: 0;
-}
-
-.fundo.transition::after{
-    opacity: 1;
-}
-
-.chao{
-    position: relative;
     width: 100%;
     height: 100%;
     overflow: hidden;
+    animation: chao-transicao 217s infinite;
 }
-
-.chao::before,
-.chao::after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transition:  opacity 1.5s ease-in-out;
-}
-.chao::before{
-    background-image: url("../img/chão-dia.png");
-    opacity: 1;
-}
-
-.chao::after{
-    background-image: url("../img/chão-noite.png");
-    opacity: 0;
-}
-
-.chao.transition::before{
-    opacity: 0;
-}
-
-.chao.transition::after{
-    opacity: 1;
-}
-
 
 /*------------------------------------------------------------------------------*/
 
 
 
-.sol{
+.sol.sanimado{
     position: absolute;
     width: 200px;
     bottom: 730px;
@@ -89,7 +36,7 @@
 
 }
 
-.nuvem1{
+.nuvem1.nanimado{
     position: absolute;
     width: 200px;
     bottom: 600px;
@@ -97,7 +44,8 @@
     background-repeat: no-repeat;
 }
 
-.igreja1{
+
+.igreja1.animada{
     position: absolute;
     width: 400px;
     bottom: 160px;
@@ -105,7 +53,7 @@
     background-repeat: no-repeat;
 }
 
-.igreja3-dia{
+.igreja3-dia.i3animada{
     position: absolute;
     width: 350px;
     bottom: 160px;
@@ -113,7 +61,7 @@
     background-repeat: no-repeat;
 }
 
-.casa1-dia{
+.casa1-dia.c1danimada{
     position: absolute;
     width: 220px;
     bottom: 160px;
@@ -121,7 +69,7 @@
     background-repeat: no-repeat;
 }
 
-.casa2-dia{
+.casa2-dia.c2danimada{
     position: absolute;
     width: 220px;
     bottom: 160px;
@@ -130,7 +78,7 @@
 
 }
 
-.cacto1{
+.cacto1.c1animado{
     position: absolute;
     width: 120px;
     bottom: 110px;
@@ -138,7 +86,7 @@
     background-repeat: no-repeat;
 }
 
-.cacto2{
+.cacto2.c2animado{
     position: absolute;
     width: 100px;
     bottom: 100px;
@@ -146,7 +94,7 @@
     background-repeat: no-repeat;
 }
 
-.passaro{
+.passaro.panimado{
     position: absolute;
     width: 100px;
     bottom: 500px;
@@ -155,7 +103,7 @@
 
 }
 
-.milho{
+.milho.animado{
     position: absolute;
     bottom: 10px;
     width: 90px;
@@ -164,7 +112,7 @@
     background-repeat: no-repeat;
 }
 
-.pedra{
+.pedra.panimada{
     position: absolute;
     bottom: 10px;
     width: 90px;
@@ -174,7 +122,7 @@
 
 }
 
-.arbusto{
+.arbusto.aanimado{
     position: absolute;
     width: 35px;
     bottom: 20px;
@@ -195,7 +143,7 @@
 
 /*------------------------------------------115-----------------------------*/
 
-.fogueira{
+.fogueira.fanimada{
     position: absolute;
     bottom: 10px;
     width: 90px;
@@ -203,7 +151,7 @@
     animation: fogueira-animacao 2.5s linear 115s 38 forwards;
 }
 
-.igreja2-noite{
+.igreja2-noite.i2nanimada{
     position: absolute;
     width: 200px;
     bottom: 160px;
@@ -212,42 +160,42 @@
     background-repeat: no-repeat;
 }
 
-.lua{
+.lua.lanimada{
     position: absolute;
     width: 170px;
     left: 1200px;
     bottom: -2000px;
-    animation: lua-animacao 120s linear 109s forwards;
+    animation: lua-animacao 110s linear 109s forwards;
 }
 
-.casa1-noite{
+.casa1-noite.c1nanimada{
     position: absolute;
     width: 220px;
     bottom: 160px;
     right: 2000px;
-    animation: casa1-noite-animacao 70s linear 163s forwards;
+    animation: casa1-noite-animacao 62s linear 163s forwards;
     background-repeat: no-repeat;
 }
 
-.casa2-noite{
+.casa2-noite.c2nanimada{
     position: absolute;
     width: 220px;
     bottom: 160px;
     right: 2000px;
-    animation: casa2-noite-animacao 70s linear 125s forwards;
+    animation: casa2-noite-animacao 60s linear 125s forwards;
     background-repeat: no-repeat;
 }
 
-.igreja3-noite{
+.igreja3-noite.i3nanimada{
     position: absolute;
     width: 350px;
     bottom: 160px;
     right: 2000px;
-    animation:  igreja3-noite-animacao 70s linear 145s forwards;
+    animation:  igreja3-noite-animacao 60s linear 145s forwards;
     background-repeat: no-repeat;
 }
 
-.balao1{
+.balao1.b1animado{
     position: absolute;
     width: 70px;
     bottom: 200px;
@@ -256,7 +204,7 @@
     background-repeat: no-repeat;
 }
 
-.cacto1-noite{
+.cacto1-noite.c1nanimado{
     position: absolute;
     width: 120px;
     bottom: 110px;
@@ -265,7 +213,7 @@
     background-repeat: no-repeat;
 }
 
-.cacto2-noite{
+.cacto2-noite.c2nanimado{
     position: absolute;
     width: 100px;
     bottom: 100px;
@@ -277,6 +225,7 @@
 @keyframes fundo-transicao{
     0%{
         background-image: url('../img/fundo-dia.jpg');
+        
     }
     
     50%{
@@ -289,6 +238,24 @@
     }
     100%{
         background-image: url('../img/fundo-noite.jpg');
+    }
+}
+
+@keyframes chao-transicao{
+    0%{
+        background-image: url('../img/chão-dia.png');
+    }
+    
+    50%{
+        background-image: url('../img/chão-dia.png');
+        
+    }
+    51%{
+        background-image: url('../img/chão-noite.png');
+        
+    }
+    100%{
+        background-image: url('../img/chão-noite.png');
     }
 }
 

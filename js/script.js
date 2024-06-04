@@ -14,13 +14,30 @@ const passaro = document.querySelector('.passaro');
 const pedra = document.querySelector('.pedra');
 const fundo = document.querySelector('.fundo');
 const chao = document.querySelector(".chao");
+const igreja2Noite = document.querySelector('.igreja2-noite');
+const lua = document.querySelector('.lua');
+const casa1Noite = document.querySelector('.casa1-noite');
+const casa2Noite = document.querySelector('.casa2-noite');
+const igreja3Noite = document.querySelector('.igreja3-noite');
+const balao1 = document.querySelector('.balao1');
+const cacto1Noite = document.querySelector('.cacto1-noite');
+const cacto2Noite = document.querySelector('.cacto2-noite');
+
+const controle = 0;
 
 document.addEventListener('DOMContentLoaded', () =>{
-    setTimeout(() => {
-        fundo.classList.add('transition');
-        chao.classList.add('transition');
-    } , 107000);
+    while( controle < 2){
+        carregarJogo();
+        controle ++;
+    }
+    
 })
+
+/*document.addEventListener('DOMContentLoaded', () =>{
+    const loop2 = setInterval(() => {
+       console.log("oia")
+    } , 5000);
+})*/
 
 const pular = () =>{
     personagem.classList.add('pulo');
@@ -49,6 +66,17 @@ const loop = setInterval( () => {
         casa2Dia.style.animationPlayState = 'paused';
         igreja3Dia.style.animationPlayState = 'paused';
         passaro.style.animationPlayState = 'paused';
+        fogueira.style.animationPlayState = 'paused';
+        igreja2Noite.style.animationPlayState = 'paused';
+        lua.style.animationPlayState = 'paused';
+        casa1Noite.style.animationPlayState = 'paused';
+        casa2Noite.style.animationPlayState = 'paused';
+        igreja3Noite.style.animationPlayState = 'paused';
+        balao1.style.animationPlayState = 'paused';
+        cacto1Noite.style.animationPlayState = 'paused';
+        cacto2Noite.style.animationPlayState = 'paused';
+
+        
 
         fogueira.style.animation = 'none';
         fogueira.style.left = `${fogueiraPosicao}px`;
@@ -63,6 +91,7 @@ const loop = setInterval( () => {
         personagem.src = './img/personagem04.png';
         personagem.style.width = '220px';
         
+        //controle = 1;
         clearInterval(loop);
     }
 }, 10)
@@ -74,3 +103,30 @@ document.addEventListener('keydown', (event) => {
         pular();
     }
 });
+
+const  carregarJogo = () =>{
+    sol.classList.add('sanimado');
+    nuvem1.classList.add('nanimado');
+    igreja1.classList.add('animada');
+    milho.classList.add('animado');
+    cacto1.classList.add('c1animado');
+    cacto2.classList.add('c2animado');
+    casa1Dia.classList.add('c1danimada');
+    casa2Dia.classList.add('c2danimada');
+    igreja3Dia.classList.add('i3animada');
+    passaro.classList.add('panimado');
+    pedra.classList.add('panimada');
+    arbusto.classList.add('aanimado');
+    fogueira.classList.add('fanimada');
+    igreja2Noite.classList.add('i2nanimada');
+    lua.classList.add('lanimada');
+    casa1Noite.classList.add('c1nanimada');
+    casa2Noite.classList.add('c2nanimada');
+    igreja3Noite.classList.add('i3nanimada');
+    balao1.classList.add('b1animado');
+    cacto1Noite.classList.add('c1nanimado');
+    cacto2Noite.classList.add('c2nanimado');
+    fundo.classList.add('funanimado');
+    chao.classList.add('chanimado');
+
+}
